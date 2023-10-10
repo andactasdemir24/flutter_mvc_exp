@@ -5,9 +5,9 @@ In this project, I wrapped the data captured via API with the provider structure
 
 ## Getting Started Used technologies
 
--getit
--provider
--http
+- getit
+- provider
+- http
 
 A few resources to get you started if this is your first Flutter project:
 
