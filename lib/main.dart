@@ -1,8 +1,15 @@
 import 'package:flutter/material.dart';
+import 'package:mvc_exp/locator.dart';
+import 'package:mvc_exp/services/user_data_service.dart';
 import 'package:mvc_exp/views/home_page.dart';
+import 'package:provider/provider.dart';
 
 void main() {
-  runApp(const MyApp());
+  setupLocator();
+  runApp(ChangeNotifierProvider(
+    create: (context) => locator<UserDataService>(),
+    child: const MyApp(),
+  ));
 }
 
 class MyApp extends StatelessWidget {
